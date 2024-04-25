@@ -1,0 +1,12 @@
+.logos{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding: 100px;
+        align-items: baseline;
+    }
+    .logo{
+        width: 158px;
+        height: 25px;
+    }
+}

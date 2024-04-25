@@ -1,0 +1,64 @@
+/*!
+Theme Name: Blank
+Theme URI: https://wpbits.com/
+Author: WPBits
+Author URI: https://wpbits.com/
+Description: Blank theme for WordPress
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: blank
+*/
+
+$primary: royalblue;
+$color-custom: #d5d9c824;
+$color-nav-text: #061D25;
+
+body {
+    background-color: $color-custom;
+}
+
+a {
+    color: $primary;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.site-header {
+    padding: 0 100px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-nav {
+        flex-grow: 1;
+        .menu{
+            list-style: none;
+            display: flex;
+            font-size: 12px;
+            font-family:Helvetica, Arial, sans-serif;
+            gap: 40px;
+           
+        }
+    }
+}
+
+
+.menu a {
+ text-decoration: none;
+ color: $color-nav-text;
+ font-weight: bold;
+}
+
+.social-nav{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+@import "home";
+@import "hero";
+@import "logos";
