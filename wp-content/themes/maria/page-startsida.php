@@ -24,5 +24,8 @@
     </div>
     <?php include('inc/logos.php');?>
     <?php include('arbetsprover.php');?>
+    <?php include('testimonials.php');?>
+    <?php include('post.php');?>
+
 </main>
 <?php include('footer.php'); ?>

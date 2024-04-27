@@ -1,13 +1,9 @@
-.logos{
+.testimonial{
     .container{
         display: flex;
         justify-content: space-between;
         padding: 100px;
         align-items: center;
-    }
-    img {
-        width: 100%;
-        max-width: 120px;
-        height: auto;
+        background: #d5d9c824;
     }
 }

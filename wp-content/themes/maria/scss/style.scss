@@ -46,7 +46,6 @@ a {
     }
 }
 
-
 .menu a {
  text-decoration: none;
  color: $color-nav-text;
@@ -62,3 +61,6 @@ a {
 @import "home";
 @import "hero";
 @import "logos";
+@import "arbetsprover";
+@import "testimonials";
+@import "post";

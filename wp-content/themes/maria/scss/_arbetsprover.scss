@@ -1,0 +1,25 @@
+.worksampletypes{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding: 100px;
+        align-items: baseline;
+        gap: 40px;
+    }
+    .worksampletype{
+        color: $color-nav-text;
+        text-decoration: none;
+        width: 203px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a:hover{
+        background:rgba(213, 217, 200, 0.4) ;
+        padding: 10px 10px 10px 10px ;
+        border-radius: 8px;
+    }
+    p{
+        color:#061D25;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
