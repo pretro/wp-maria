@@ -1,13 +1,24 @@
+<?php
+$args = [
+    'post_type' => 'blogg',
+    'numberposts' => -1,
+    'post_status' => 'publish',
+];
+$bloggs = get_posts($args);
+?>
 <?php include('header.php'); ?>
-<main>
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <article>
-            <a href="<?php the_permalink(); ?>"><h1 class="post-title"><?php the_title(); ?></h1></a>
-            <p><?php the_excerpt(); ?></p>
-        </article>
-    <?php endwhile; ?>
-    <?php else: ?>
-        <p>No posts found. 😢</p>
-    <?php endif; ?>
-</main>
-<?php include('footer.php'); ?>
+<div class="testimonial">
+    <div class="container">
+        <p>Kategorier</p>
+        <?php foreach($bloggs as $blogg): ?>
+            <?php echo get_field('text', $blogg->ID) ?>
+            <?php endforeach; ?>
+            <?php
+            wp_list_categories(array(
+                'title_li' => '',
+                'hide_empty' => 0,
+            ));
+            ?>
+    </div>
+</div>
+ <?php include('footer.php'); ?>

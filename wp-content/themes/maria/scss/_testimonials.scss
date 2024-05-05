@@ -1,9 +1,30 @@
-.testimonial{
-    .container{
-        display: flex;
-        justify-content: space-between;
-        padding: 100px;
-        align-items: center;
-        background: #d5d9c824;
+.testimonial {
+  background-color: #d5d9c824;
+  .container {
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr) minmax(
+        150px,
+        1fr
+      );
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap:150px;
+    margin-bottom:100px;
+  }
+  .texter {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    .paragraph{
+        width: 245px;
     }
+    .title {
+      font-weight: bold;
+    }
+  }
+  img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    margin-top: 50px;
+  }
 }

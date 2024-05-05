@@ -1,0 +1,95 @@
+footer {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) minmax(250px, 1fr) minmax(350px, 1fr);
+    gap: 40px;
+
+        .tel{
+            margin-top: 90px;
+        }
+        .tel , .email {
+            font-size: 16px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            display: block;
+        }
+        
+        .tele , .emejl {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+        }
+        
+        .imagen{
+            float: left;
+         
+            margin-bottom: 30px;
+        }
+    
+    ul {
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+        a {
+            text-decoration: none;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 10px;
+            display: block;
+        }
+    }
+    h2{
+        color: black;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        width: 366px;
+    }
+}
+
+.copyright{
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 14px;
+   display: block;
+   margin: 0 auto;
+   padding: 50px;
+   text-align: center;
+}
+
+.lista{
+    list-style-type: none;
+}
+.newsletter {
+    form{
+        display: flex;
+        justify-content: space-between;
+    }
+  width: 95%;
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 5px 5px 5px 20px;
+  margin: 40px 0;
+  input {
+    font-family: Helvetica, Arial, sans-serif;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+  }
+  button{
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    background-color: #061D25;
+    width: 108px;
+    height: 37px;
+  }
+}

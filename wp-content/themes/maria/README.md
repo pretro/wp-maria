@@ -27,3 +27,7 @@ Please note that you'll need to edit the "browser-sync" script inside package.js
 ## Credits
 
 Made by [@WPBites](https://www.youtube.com/@wpbites) / [wpbites.dev](https://wpbites.dev).
+
+## Known issues
+
+- Remember to stop and start the server to update changes

@@ -5,7 +5,7 @@
             <div class="left">
                 <img class="bild" src="<?php echo get_field('image')['url']; ?>" alt="logo2">
             </div>
-            <div class="right">-
+            <div class="right">
                 <div>
                     <?php echo get_field('content'); ?>
                 </div>
@@ -23,9 +23,8 @@
         </div>
     </div>
     <?php include('inc/logos.php');?>
-    <?php include('arbetsprover.php');?>
-    <?php include('testimonials.php');?>
-    <?php include('post.php');?>
-
+    <?php include('inc/arbetsprover.php');?>
+    <?php include('inc/testimonials.php');?>
+    <?php include('inc/post.php');?>
 </main>
 <?php include('footer.php'); ?>
