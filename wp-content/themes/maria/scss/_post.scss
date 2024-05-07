@@ -14,7 +14,7 @@
     margin: -15px;
     border-radius: 15px;
     &:hover {
-        background-color: #D5D9C8;
+      background-color: #d5d9c8;
     }
     .texter {
       font-family: Arial, Helvetica, sans-serif;
@@ -32,11 +32,13 @@
       }
     }
   }
+
   img {
     width: 100%;
     height: auto;
     border-radius: 5px;
   }
+
   .post_btn {
     background: $color-nav-text;
     color: white;
@@ -48,11 +50,10 @@
     display: block;
     margin: 0 auto;
     margin-top: 50px;
-
   }
-  .text_tag{
+  .text_tag {
     color: white;
-    background-color: #D89771;
+    background-color: #d89771;
     border-radius: 60px;
     width: 96px;
     height: 34px;
@@ -61,5 +62,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .posts {
+    .grid-item{
+      .texter{
+       width: -webkit-fill-available;
+      }
+    }
+    .posts-grid {
+      display: block;
+      grid-gap: 20px;
+      max-width: 1020px;
+      margin: 0 auto;
+    }
   }
 }

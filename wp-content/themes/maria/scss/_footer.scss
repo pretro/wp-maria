@@ -1,73 +1,76 @@
 footer {
+  .container {
     padding-top: 100px;
     display: grid;
-    grid-template-columns: minmax(250px, 1fr) minmax(250px, 1fr) minmax(350px, 1fr);
+    grid-template-columns: minmax(250px, 1fr) minmax(250px, 1fr) minmax(
+        350px,
+        1fr
+      );
     gap: 40px;
 
-        .tel{
-            margin-top: 90px;
-        }
-        .tel , .email {
-            font-size: 16px;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: left;
-            display: block;
-        }
-        
-        .tele , .emejl {
-            font-size: 16px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: left;
-        }
-        
-        .imagen{
-            float: left;
-         
-            margin-bottom: 30px;
-        }
-    
+    .tel,
+    .email {
+      font-size: 16px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: left;
+      display: grid;
+    }
+
+    .tele,
+    .emejl {
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: left;
+    }
+
+    .imagen {
+      float: left;
+
+      margin-bottom: 30px;
+    }
+
     ul {
-        padding: 0;
-        margin: 0;
-        margin-top: 20px;
-        a {
-            text-decoration: none;
-            color: black;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-bottom: 10px;
-            display: block;
-        }
-    }
-    h2{
+      padding: 0;
+      margin: 0;
+      margin-top: 20px;
+      a {
+        text-decoration: none;
         color: black;
-        font-size: 16px;
         font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+        display: block;
+      }
     }
-    p{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        width: 366px;
+    h2 {
+      color: black;
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
     }
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      width: 366px;
+    }
+  }
+}
+.copyright {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  display: block;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
 }
 
-.copyright{
-    font-family: Arial, Helvetica, sans-serif;
-   font-size: 14px;
-   display: block;
-   margin: 0 auto;
-   padding: 50px;
-   text-align: center;
-}
-
-.lista{
-    list-style-type: none;
+.lista {
+  list-style-type: none;
 }
 .newsletter {
-    form{
-        display: flex;
-        justify-content: space-between;
-    }
+  form {
+    display: flex;
+    justify-content: space-between;
+  }
   width: 95%;
   border-radius: 8px;
   border: 1px solid black;
@@ -80,16 +83,37 @@ footer {
     font-size: 15px;
     background: transparent;
   }
-  button{
+  button {
     padding: 10px 16px;
     border: none;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     border-radius: 6px;
-    color: #FFFFFF;
-    background-color: #061D25;
+    color: #ffffff;
+    background-color: #061d25;
     width: 108px;
     height: 37px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  footer {
+    .container {
+      padding-top: 100px;
+      display: block;
+      gap: 40px;
+      width: fit-content;
+      p{
+        line-height: 25px;
+      }
+      .column2,  .column3{
+        margin-top: 30px;
+        width: fit-content;
+      }
+    }
+    .copyright{
+        padding: 20px;
+    }
   }
 }

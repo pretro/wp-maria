@@ -4,15 +4,14 @@ $args = [
     'numberposts' => -1,
     'post_status' => 'publish',
 ];
-$bloggs = get_posts($args);
+$posts = get_post($args);
 ?>
 <?php include('header.php'); ?>
-<div class="testimonial">
-    <div class="container">
-        <p>Kategorier</p>
-        <?php foreach($bloggs as $blogg): ?>
-            <?php echo get_field('text', $blogg->ID) ?>
-            <?php endforeach; ?>
+<div class="posts">
+    <div class="posts-grid">
+        <h1>Kategorier</h1>
+       
+
             <?php
             wp_list_categories(array(
                 'title_li' => '',
@@ -21,4 +20,5 @@ $bloggs = get_posts($args);
             ?>
     </div>
 </div>
- <?php include('footer.php'); ?>
+<?php include('inc/logos.php'); ?>
+<?php include('footer.php'); ?>

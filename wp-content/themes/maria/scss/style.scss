@@ -64,6 +64,32 @@ h1{
     font-size: 22px;
 }
 
+@media screen and (max-width: 768px) {
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .site-header {
+        padding: 0 10px; 
+    }
+    .main-nav{
+        visibility: hidden;
+        display: none;
+    }
+
+    .menu {
+        flex-direction: column; 
+        visibility: hidden;
+        display: none;
+    }
+
+    .social-nav{
+        visibility: hidden;
+        display: none;
+    }
+}
+
 @import "home";
 @import "hero";
 @import "logos";

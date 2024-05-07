@@ -27,7 +27,7 @@ $histories = get_posts($args);
             </div>
             <div>
             </div>
-        <?php endforeach; ?>
+    <?php endforeach; ?>
         </div>
 </div>
         <?php include('inc/logos.php'); ?>

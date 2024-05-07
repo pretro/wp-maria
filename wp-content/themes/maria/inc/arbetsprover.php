@@ -4,8 +4,9 @@ $types = get_terms( array(
     'hide_empty' => false,
 ) );
 ?>
-<div class="worksampletypes">
-    <div class="container">
+<div class="worksampletypes container">
+    <h1>Arbetsprover</h1>
+    <div class="arbetsprover-grid">
     <?php foreach($types as $type): ?>
         <?php $image_url = wp_get_attachment_image_url(get_field('image', $type), 'work_thumbnail'); ?>
         <a href="<?php echo get_home_url().'/arbetsprover/'; ?>#<?php echo $type->slug ?>" class="worksampletype">

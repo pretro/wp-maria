@@ -6,7 +6,8 @@ $args = [
 ];
 $footers = get_posts($args);
 ?>
-<footer class="container">
+<footer>
+    <div class="container">
     <div class="column1">
         <?php foreach ($footers as $footer) : ?>
             <img src="<?php echo get_field('image', $footer->ID); ?>" class="imagen"  alt="<?php echo $footer->post_title; ?>">
@@ -38,7 +39,9 @@ $footers = get_posts($args);
         </div>
     </div>
     </div>
+        </div>
 <?php endforeach; ?>
+        
 </footer>
 <div class="copyright">
     <div class="container">
