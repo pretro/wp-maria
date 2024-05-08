@@ -18,9 +18,9 @@
                 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
             </nav>
             <nav class="social-nav">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-facebook"></i>
+                <a href="https://www.instagram.com/mamma_mammaria/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/maria-hagstr%C3%B6m-9b03b384/" target="_blank"><i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.facebook.com/mariahags/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             </nav>
         </div>
     </header>

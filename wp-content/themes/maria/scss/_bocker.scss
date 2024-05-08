@@ -10,7 +10,6 @@
   }
   .right {
     font-family: Arial, Helvetica, sans-serif;
-    width: 885px;
     line-height: 25px;
     text-align: justify;
 
@@ -44,18 +43,15 @@
 }
 @media screen and (max-width: 768px) {
   .bocker {
-    .title{
-      margin-top: 50px;
+    .right {
+      padding-top: 30px;
+      .paragr {
+        width: auto;
+      }
     }
     .bocker-grid {
       display: block;
-     
-    }
-    .right{
-      width: auto;
-      .paragr{
-        width: auto;
-      }
+      margin-bottom: 100px;
     }
   }
 }
