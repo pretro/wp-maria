@@ -9,7 +9,7 @@
 </head>
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-    <header class="site-header">
+    <header class="site-header collapsed">
         <div class="container">
             <a href="<?php echo site_url(); ?>">
                 <img class="picture" src="<?php echo get_stylesheet_directory_uri() . '/assets/logo.svg'; ?>" alt="logo">
@@ -22,5 +22,13 @@
                 <a href="https://www.linkedin.com/in/maria-hagstr%C3%B6m-9b03b384/" target="_blank"><i class="fa-brands fa-linkedin"></i>
                 <a href="https://www.facebook.com/mariahags/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             </nav>
+            <a href="#nav-toggle" id="nav-toggle">🍔</a>
+            <script>
+                let navToggle = document.getElementById('nav-toggle');
+                navToggle.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    document.querySelector('.site-header').classList.toggle('collapsed');
+                });
+            </script>
         </div>
     </header>
