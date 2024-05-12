@@ -3,20 +3,21 @@ $args = [
     'taxonomy' => 'worksampletype',
     'hide_empty' => false,
     'orderby' => 'name',
-    'order' => 'ASC'
+    'order' => 'ASC',
 ];
 $terms = get_terms($args);
 ?>
 
 <?php include('header.php'); ?>
 <main>
+    <div class="worksamples container">
     <h1>Arbetsprover</h1>
-    <div class="worksamples">
         <?php foreach($terms as $term) : ?>
             <h3 id="<?php echo $term->slug; ?>"><?php echo $term->name; ?></h3>
             <?php
             $args = [
                 'post_type' => 'worksamples',
+                'numberposts' => -1,
                 'tax_query' => [
                     [
                         'taxonomy' => 'worksampletype',
@@ -27,7 +28,7 @@ $terms = get_terms($args);
             ];
             $posts = get_posts($args);
             ?>
-      <ul class="worksamples-list">
+      <ul class="worksamples-lista∑">
     <?php foreach($posts as $post) : ?>
         <?php
         $type = get_field('type', $post->ID); // Obtener el tipo de enlace
