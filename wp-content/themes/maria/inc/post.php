@@ -19,7 +19,9 @@ $featured_posts = get_field('featured_posts');
         </div>
     <?php endforeach; ?>
     </div>
+    <a href="http://localhost:3000/blogg/">
     <button class="post_btn">Se alla inlägg</button>
+</a>
 </div>
 
 
