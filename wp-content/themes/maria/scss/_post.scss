@@ -5,9 +5,10 @@
     grid-gap: 20px;
     max-width: 1020px;
     margin: 0 auto;
+    margin-top: 20px;
   }
   .grid-item {
-    text-align: center;
+    text-align: left;
     background-color: transparent;
     transition: background-color 0.3s ease;
     padding: 15px;
@@ -15,6 +16,11 @@
     border-radius: 15px;
     &:hover {
       background-color: #d5d9c8;
+    
+    }
+    .post-title{
+      text-align: left;
+      font-size: 16px;
     }
     .texter {
       font-family: Arial, Helvetica, sans-serif;
@@ -32,7 +38,6 @@
       }
     }
   }
-
   img {
     width: 100%;
     height: auto;

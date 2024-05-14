@@ -31,12 +31,7 @@ a {
 
 .site-header {
   padding: 0 100px;
-  &.collapsed {
-    
-  }
-  &:not(.collapsed) {
-    
-  }
+ 
   .container {
     display: flex;
     justify-content: space-between;
@@ -136,7 +131,6 @@ h1 {
 @import "testimonials";
 @import "post";
 @import "footer";
-
 @import "bocker";
 @import "omMaria";
 @import "index";
