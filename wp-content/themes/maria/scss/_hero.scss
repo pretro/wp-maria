@@ -6,8 +6,8 @@
     max-width: 1020px;
     .left {
       .bild {
-        width: 473px;
-        height: 534px;
+        width: 100%;
+        height: auto;
         margin-right: 120px;
       }
     }
@@ -59,40 +59,27 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 554px){
+  .newsletter {
+    visibility: hidden;
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
   .hero {
-    padding: 0;
     .container {
-      flex-direction: column;
-      .right{
-        p{
-          font-size: 14px;
-          font-family: Helvetica, Arial, sans-serif;
-          width: 425px;
-          line-height: 22px;
-          text-align: center;
-        } 
-        h1{
-        text-align: center;
-        margin-top: 50px;
-        font-size: 20px;
-        margin-bottom: 50px;
-      }
-     
-      .newsletter{
-        width: 85%;
-        border-radius: 8px;
-        border: 2px solid black;
-        margin-left: 20px;
-      }
-    }
-      .left{
-        .bild{
-          width: 344px;
-          height: 358px;
-          padding-left: 35px;
+      .left {
+        .bild {
+          width: 100%;
+          height: auto;
         }
       }
     }
+    .right {
+      margin-left: 100px;
+    }
   }
 }
+
+

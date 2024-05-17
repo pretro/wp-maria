@@ -71,9 +71,18 @@
   }
 }
 
-@media screen and (max-width: 430px) {
+@media (min-width: 375px) and  (max-width: 576px) {
   .posts {
+    .categorie{
+      display: none;
+      visibility: hidden;
+    }
+      p{
+        text-align: center;
+        font-size: 12px;
+      } 
     .grid-item{
+      margin-top: 10px;
       .texter{
        width: -webkit-fill-available;
       }
@@ -83,6 +92,18 @@
       grid-gap: 20px;
       max-width: 1020px;
       margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width:576px) and (max-width:992px){
+  .posts{
+      width: fit-content;
+    h1{
+      text-align: center;
+    }
+    .posts-grid{
+      display: block;
     }
   }
 }

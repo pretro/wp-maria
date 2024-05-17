@@ -41,10 +41,15 @@
     color: #bf5933;
   }
 }
-@media screen and (max-width: 768px) {
+@media (min-width:375px) and  (max-width: 992px) {
   .bocker {
+    .title h1{
+      margin-bottom: 50px;
+      text-align: center;
+    }
     .right {
       padding-top: 30px;
+      text-align: center;
       .paragr {
         width: auto;
       }
@@ -52,6 +57,10 @@
     .bocker-grid {
       display: block;
       margin-bottom: 100px;
+    }
+    img{
+      visibility: hidden;
+      display: none;
     }
   }
 }

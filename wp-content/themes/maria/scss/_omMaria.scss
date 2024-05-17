@@ -39,57 +39,31 @@
   }
 }
 
-@media screen and (max-width: 430px) {
-    body{
-        width: 95%;
-        overflow-x: hidden;
-    }
+@media (min-width: 375px) and (max-width: 1200px) {
   .histories {
-    text-align: center;
-    flex-direction: column;
-    padding: 0;
+    .histories-grid {
+      display: block;
+    }
     .right {
       .image {
         visibility: hidden;
         display: none;
       }
-      .paragraf{
+      .paragraf {
         width: auto;
+        text-align: center;
       }
     }
-    .histories-grid{
-        display: block;
+    .left {
+      width: auto;
+      text-align: center;
     }
-    .left{
-        line-height: 25px;
-        width: min-content;
+    .paragraf {
+      width: auto;
     }
-    .rubrik{
-        margin-top: 50px;
+    .rubrik {
+      text-align: center;
     }
   }
 }
 
-@media screen and (min-width: 431px) and (max-width: 1024px) {
-  .histories{
-    .histories-grid{
-      display: block;
-      text-align: center;
-      margin-left: 100px;
-      .paragraf{
-        margin-left: 65px;
-      }
-    }
-    .right {
-      .image {
-        visibility: hidden;
-        display: none;
-      }
-    }
-    .left{
-      .paragraf{
-        margin-left: 150px;
-      }
-    }
-  }
-}

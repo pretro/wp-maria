@@ -33,13 +33,18 @@
       font-family: Arial, Helvetica, sans-serif;
     }
   
-
-@media screen and (max-width: 430px) {
-  .worksampletypes {
-    .arbetsprover-grid {
-      padding-bottom: 0px;
-      display: block;
-      text-align: center;
+    @media (min-width: 375px) and (max-width:992px) {
+      .worksampletypes {
+        text-align: center;
+        .arbetsprover-grid {
+          display: block;
+          text-align: center;
+          width: min-content;
+          margin: 0 auto;
+        }
+      }
     }
-  }
-}
+    
+
+
+

@@ -29,7 +29,8 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+
+@media  (min-width: 375px) and (max-width: 576px) {
   .testimonial {
     img{
       margin-bottom: 30px;
@@ -57,3 +58,34 @@
     }
   }
 }
+
+@media  (min-width: 576px) and (max-width: 992px) {
+  .testimonial {
+    img{
+      margin-bottom: 30px;
+    }
+    .container{
+      text-align: center;
+    }
+    background-color: #d5d9c824;
+    .texter{
+      .paragraph{
+        width: auto;
+        text-align: center;
+      }
+      .title{
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+    .container {
+      display: block;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      gap: 150px;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+
