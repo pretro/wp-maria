@@ -21,7 +21,9 @@ $histories = get_posts($args);
                 <?php endforeach; ?>
             </div>
             <div class="right">
+                <div class="maria-img">
                 <img class="image" src="<?php echo $history['image'] ?>">
+                </div>
                 <p class="rubrik"><?php echo  $history['texts'] ?></p>
                 <p class="paragraf"><?php echo  $history['priser'] ?></p>
             </div>

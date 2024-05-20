@@ -3,3 +3,16 @@
     margin-top: 100px;
   }
 }
+@media (min-width: 375px) {
+  .single {
+    .container {
+      .singles {
+        .post-thumbnail {
+          img {
+            width: 360px;
+          }
+        }
+      }
+    }
+  }
+}
