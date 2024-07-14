@@ -32,7 +32,7 @@ $footers = get_posts($args);
         <h2>Registrera</h2>
         <p><?php echo get_field('text', $footer->ID); ?></p>
         <div class="newsletter">
-            <form action="send.email.php">
+            <form action="#">
                 <input type="email" name="email" id="email" placeholder="Din epostadress" />
                 <button type="submit">Registrera</button>
             </form>
