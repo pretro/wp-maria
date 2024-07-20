@@ -18,10 +18,24 @@ body {
   background-color: $color-custom;
 }
 
+.category_title{
+  color: #d89771;
+}
+
 a {
   color: black;
   text-decoration: none;
   list-style: none;
+}
+
+.mi-clase-css {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: white; /* Cambia el color del texto del enlace */
+  margin-right: 5px; /* Espacio entre enlaces */
+}
+
+.mi-clase-css:hover {
+  color: #0073aa; /* Color del enlace al pasar el ratón por encima */
 }
 
 .container {
