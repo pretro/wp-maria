@@ -20,6 +20,7 @@ body {
 
 .category_title{
   color: #d89771;
+  padding: 230px;
 }
 
 a {
@@ -62,6 +63,12 @@ a {
   }
 }
 
+.post-title-header{
+  padding: 0 230px;
+  font-size: 37px;
+  line-height: normal;
+}
+
 .menu a {
   text-decoration: none;
   color: $color-nav-text;
@@ -83,9 +90,9 @@ a {
 #nav-toggle,
 #nav-toggle-close {
     position: absolute;
-    top: 10px; /* Ajusta según sea necesario para posicionar correctamente los íconos */
-    right: 10px; /* Ajusta según sea necesario para posicionar correctamente los íconos */
-    z-index: 20; /* Debe ser mayor que el z-index del fondo del menú móvil */
+    top: 10px; 
+    right: 10px; 
+    z-index: 20; 
 }
 
 h1 {
@@ -239,8 +246,6 @@ h1 {
 
 }
 
-
-
 @import "home";
 @import "hero";
 @import "logos";
@@ -252,3 +257,4 @@ h1 {
 @import "omMaria";
 @import "index";
 @import "archive-arbetsprov";
+@import "subscribe";

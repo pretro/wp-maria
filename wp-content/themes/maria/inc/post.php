@@ -25,7 +25,7 @@ $featured_posts = get_field('featured_posts');
                         ?>
                     </h3>
                     <h2><?php echo $post->post_title; ?></h2>
-                    <p><?php echo $post->post_content; ?></p>
+                    <p class="paragraf"><?php the_excerpt(); ?></p>
                 </div>
             </div>
         <?php endforeach; ?>

@@ -22,6 +22,7 @@
     .post-title{
       text-align: left;
       font-size: 16px;
+      
     }
     .texter {
       font-family: Arial, Helvetica, sans-serif;
@@ -69,7 +70,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  }  
+}
+
+.time-date{
+  margin: 40px auto;
+  font-size: 14px;
+  width: 55%;
+}
+
+.time-date .date {
+  color: #9E9E9E;
+}
+
+.time-date .author {
+  color: #000000;  
+}
+
+.time-date .separator {
+  color: #000000; 
+  font-size: 20px; 
+  font-weight: bold; 
+  margin: 0 5px; 
 }
 
 @media (min-width: 375px) and  (max-width: 576px) {
