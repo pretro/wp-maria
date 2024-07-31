@@ -31,26 +31,40 @@ $footers = get_posts($args);
         <div class="column3">
             <h2>Registrera</h2>
             <p><?php echo get_field('text', $footer->ID); ?></p>
-            <!-- <div class="newsletter">
+            <div class="newsletter">
                 <form id="newsletter-form">
                     <input type="email" name="email" id="email" placeholder="Din epostadress" />
                     <button type="submit">Registrera</button>
                 </form>
-            </div> -->
-            <div class="newsletter">
-                <?php echo do_shortcode('[mc4wp_form id=501]'); ?>
             </div>
+            <div id="response-message"></div>
+            <button id="openModalButton">Registrera</button>
         </div>
     </div>
     </div>
 <?php endforeach; ?>
-
 </footer>
+
+<!-- Modal HTML -->
+<div id="myModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Regístrate para recibir nuestras novedades</h2>
+        <form id="modal-newsletter-form" action="subscribe.php" method="post">
+            <label for="modal-email">Email:</label>
+            <input type="email" id="modal-email" name="email" required>
+            <button type="submit">Suscribirse</button>
+        </form>
+        <div id="modal-response-message"></div>
+    </div>
+</div>
+
 <div class="copyright">
     <div class="container">
         <p class="copyright">2024 mariahagstrom.se © Copyright </p>
     </div>
 </div>
+<script src="./script.js"></script>
 </body>
 
 </html>
