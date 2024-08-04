@@ -30,13 +30,13 @@ a {
 }
 
 .mi-clase-css {
-  text-decoration: none; /* Elimina el subrayado de los enlaces */
-  color: white; /* Cambia el color del texto del enlace */
-  margin-right: 5px; /* Espacio entre enlaces */
+  text-decoration: none; 
+  color: white; 
+  margin-right: 5px; 
 }
 
 .mi-clase-css:hover {
-  color: #0073aa; /* Color del enlace al pasar el ratón por encima */
+  color: #0073aa; 
 }
 
 .container {
@@ -80,6 +80,7 @@ a {
   gap: 20px;
   margin-top: 10px;
 }
+
 #nav-toggle {
   display: flex;
   margin-top: 10px;
@@ -168,22 +169,21 @@ h1 {
   background: #fff;
 }
 
-/* Nuevos estilos para asegurar la visibilidad de los íconos */
 .site-header {
-  position: relative; /* Necesario para que z-index funcione */
-  z-index: 1000; /* Mayor que el z-index del menú móvil */
+  position: relative;
+  z-index: 1000; 
 }
 
 #nav-toggle-container {
   position: absolute;
-  top: 10px; /* Ajusta según sea necesario */
-  right: 10px; /* Ajusta según sea necesario */
-  z-index: 1001; /* Mayor que el z-index del menú móvil y del header */
+  top: 10px; 
+  right: 10px; 
+  z-index: 1001;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px; /* Ajusta según el tamaño de tus iconos */
-  height: 40px; /* Ajusta según el tamaño de tus iconos */
+  width: 40px; 
+  height: 40px; 
 }
 
 #nav-toggle,
@@ -196,8 +196,8 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%; /* Ajusta según sea necesario */
-  height: 100%; /* Ajusta según sea necesario */
+  width: 100%; 
+  height: 100%; 
 }
 
 #nav-toggle,
@@ -257,4 +257,4 @@ h1 {
 @import "omMaria";
 @import "index";
 @import "archive-arbetsprov";
-@import "subscribe";
+
