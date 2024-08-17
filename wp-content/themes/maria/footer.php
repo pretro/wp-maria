@@ -31,7 +31,9 @@ $footers = get_posts($args);
         <div class="column3">
             <h2>Registrera</h2>
             <p><?php echo get_field('text', $footer->ID); ?></p>
+            <div class="register">
             <?php echo do_shortcode('[mc4wp_form id=501]'); ?>
+            </div>
         </div>
     </div>
     </div>

@@ -11,13 +11,6 @@
                 </div>
                 <?php if(get_field('newsletter')): ?>
                     <?php echo do_shortcode('[mc4wp_form id=501]'); ?>
-                   <!--  <div class="newsletter">
-                     <form action="#">
-                        <input type="email" name="email" id="email"
-                            placeholder="Din epostadress"/>
-                            <button type="submit">Registrera</button>
-                        </form>
-                    </div> -->
             </div>
                 <?php endif; ?>
             </div>

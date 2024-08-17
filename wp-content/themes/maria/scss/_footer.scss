@@ -99,37 +99,16 @@ footer {
   }
 } */
 
-@media (min-width: 375px) and (max-width: 576px) {
+@media (min-width: 344px) and (max-width: 992px) {
   footer {
     .container {
-      padding-top: 100px;
+      padding-top: 80px;
       display: block;
       gap: 40px;
       width: fit-content;
       p {
         line-height: 25px;
-      }
-      .imagen {
-        float: none;
-      }
-      .column2,
-      .column3 {
-        margin-top: 30px;
-        width: fit-content;
-      }
-    }
-  }
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-  footer {
-    .container {
-      padding-top: 100px;
-      display: block;
-      gap: 40px;
-      width: fit-content;
-      p {
-        line-height: 25px;
+        width: auto;
       }
       .imagen {
         float: none;
