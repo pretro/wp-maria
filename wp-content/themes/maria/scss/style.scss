@@ -42,6 +42,7 @@ a {
 .container {
   max-width: 1020px;
   margin: 0 auto;
+  gap:40px;
 }
 
 .site-header {
@@ -50,6 +51,7 @@ a {
   .container {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
   }
   .main-nav {
     flex-grow: 1;
