@@ -8,6 +8,7 @@ $featured_posts = get_field('featured_posts');
             $post_image = get_the_post_thumbnail_url($post, 'featured_thumbnail');
         ?>
             <div class="grid-item">
+            <a href="<?php the_permalink(); ?>">
                 <div class="texter">
                     <?php if ($post_image) : ?>
                         <img src="<?php echo $post_image; ?>" alt="<?php echo $post->post_title; ?>">
