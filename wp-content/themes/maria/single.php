@@ -33,6 +33,22 @@
             <?php endif; ?>
             <div class="content-paragraf">
             <?php the_content(); ?>
+             <!-- Mostrar los campos personalizados -->
+             
+                <?php 
+                // Mostrar imagen (bild)
+                if (get_field('bild')) {
+                    $bild = get_field('bild');
+                    echo '<div class="post-thumbnail-singles"><img src="' . esc_url($bild['url']) . 
+                    '" alt="' . esc_attr($bild['alt']) . '"></div>';
+                }
+
+                // Mostrar párrafo adicional
+                if (get_field('paragraf')) {
+                    echo '<div class="blogg-paragraf"><p>' . esc_html(get_field('paragraf')) . '</p></div>';
+                }
+                
+                ?>
             </div>
         </div>
     </div>

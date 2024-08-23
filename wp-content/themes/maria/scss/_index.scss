@@ -22,6 +22,21 @@
   }
 }
 
+
+
+@media (min-width: 344px) and (max-width: 1024px){
+  .single {
+  .post-thumbnail-singles {
+    padding-left: 110px;
+    img {
+      width: 90%;
+      height: auto;
+    }
+  }
+}
+
+}
+
 @media (min-width: 375px) {
   .single {
     .container {

@@ -31,7 +31,7 @@ $terms = get_terms($args);
       <ul class="worksamples-lista∑">
     <?php foreach($posts as $post) : ?>
         <?php
-        $type = get_field( 'type', $post->ID); // Obtener el tipo de enlace
+        $type = get_field('type', $post->ID); // Obtener el tipo de enlace
         $href = get_permalink($post->ID); // Obtener la URL del enlace
 
         // Si el tipo es PDF, obtener el enlace al PDF

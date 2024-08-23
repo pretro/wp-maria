@@ -223,6 +223,16 @@ h1 {
 }
 
 @media (min-width: 344px ) and (max-width: 992px) {
+  .category_title{
+    color: #d89771;
+    padding: 80px;
+  }
+
+    .post-title-header{
+    font-size: 37px;
+    line-height: normal;
+  }
+
   .site-header {
     padding: 0;
   }
